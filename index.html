@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sign In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link  rel="stylesheet" type="text/css" href="style.css"> 
+ 
+  </head>
+  <body>
+    <form action="/action.php" name="myForm" onsubmit="return validateform()" method="post">
+      <div id="box">
+        
+        <div class="design" id="signin">Sign In</div>
+
+        <div class="design" id="name">
+          <input type="text" name="fname" placeholder="Username" required /><b
+            ><div class="ferror"></div
+          ></b>
+        </div>
+
+        <div class="design" id="password">
+          <input type="password" name="fpassword" placeholder="Password" required/><b><div class="ferror"></div></b></div>
+          <div id="ch">
+            <input id="check" type="checkbox" name="check_box" value="check">
+            <label for="check_box" id="remember"><span style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Remember me</span></label>
+        </div>
+
+        <div id="submit">
+            <input  id="sub" type="submit" placeholder="Submit" required/>
+        </div>  
+    </div>
+    </form>
+    <script type="text/javascript" src="javascript.js"></script>
+  </body>
+</html>
